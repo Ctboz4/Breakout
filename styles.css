@@ -1,0 +1,15 @@
+#playerPaddle{
+     width: 100px; height:25px; border: 1px solid #000000; 
+    background-color: blue;
+    position: absolute;
+  bottom: 10px;
+}
+
+#ball{ border: 1px solid #000000;
+    background-color: black;
+     width: 35px;
+height: 35px;
+position: absolute;
+border-radius: 50%;}
+
+
