@@ -1,12 +1,19 @@
+html{background-color: #ffb677;}
+
+
+
+
 #playerPaddle{
-     width: 100px; height:25px; border: 1px solid #000000; 
-    background-color: blue;
+     width: 100px; height:25px; ; 
+    background-color: #5f6caf;
     position: absolute;
   bottom: 10px;
+  border: none;
+  border-radius: 50px;
 }
 
-#ball{ border: 1px solid #000000;
-    background-color: black;
+#ball{ border: none;
+    background-color: #5f6caf;
      width: 35px;
 height: 35px;
 position: absolute;
