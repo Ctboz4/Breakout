@@ -10,6 +10,7 @@ html{background-color: #ffb677;}
   bottom: 10px;
   border: none;
   border-radius: 50px;
+  left: 48%;
 }
 
 #ball{ border: none;
@@ -18,7 +19,8 @@ html{background-color: #ffb677;}
 height: 35px;
 position: absolute;
 border-radius: 50%;
-animation: fall 2s linear infinite;}
+left: 50%;
+}
 
 
 @keyframes fall {
