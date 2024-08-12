@@ -1,6 +1,15 @@
 html{background-color: #ffb677;}
 
-
+#startButton{position: absolute;
+    left: 45%;
+    top: 40%;
+    background-color: black;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 25%;
+width: 200px;
+height: 100px;}
 
 
 #playerPaddle{
