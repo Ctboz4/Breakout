@@ -1,15 +1,36 @@
 html{background-color: #ffb677;}
 
-#startButton{position: absolute;
-    left: 45%;
-    top: 40%;
-    background-color: black;
-    font-size: large;
-    color: white;
-    border: none;
-    border-radius: 25%;
-width: 200px;
-height: 100px;}
+#startButton{ align-items: center;
+    appearance: none;
+    background-color: #5f6caf;
+    background-image: linear-gradient(1deg, #4F58FD, #5f6caf 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+
+
+
+}
 
 
 #playerPaddle{
