@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const startButton = document.getElementById('startButton');
     let ballDirectionY = 1; // 1 for down, -1 for up
     let ballSpeed = 5; // Speed of the ball
+    const lives = document.getElementById('healthBar');
+    let healthBar = 3;
 
     startButton.addEventListener('click', () => {
         // Start the ball animation
@@ -11,10 +13,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
    
     });
 
+    function updateHealthBar(lives) {   
+        
+
+    }
 
 
 
 function gameLoop() {
+
+
     // Get current positions
     const ballRect = ball.getBoundingClientRect();
     const paddleRect = paddle.getBoundingClientRect();
@@ -34,8 +42,33 @@ function gameLoop() {
         ballDirectionY = 1; // Reverse direction to down
     }
 
+    if (ballRect.bottom >= window.innerHeight) {
+        console.log('Game Over!');
+    }
+
+
+
+    if (ballRect.bottom > window.innerHeight) {
+        lives -= 1;
+    }
+
+    if (ballRect.top > window.innerHeight) {
+        lives -= 1;
+    }
+
+   
+
+
+
     // Continue the game loop
     requestAnimationFrame(gameLoop);
+
+    if (lives === 0) {
+        alert('Game Over!');
+        return;
+    }
+
+   
 }
 
 
